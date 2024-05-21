@@ -29,7 +29,7 @@ jobs:
         
    # Run the POSTMAN collection
       - name: Run API Tests
-        run: newman run "Operations Order Automation.postman_collection" -e Dev.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html || true
+        run: newman run "Operations Order Automation.postman_collection.json" -e Dev.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html || true
 
     # Upload the contents of Test Results directory to workspace
       - name: Output the run Details
